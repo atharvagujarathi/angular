@@ -1,0 +1,12 @@
+<!-- <p>servers works!</p> -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+            <button class="btn btn-primary" (click)="onCreateServer()">okay</button>
+            <p>{{ serverCreationStatus }}</p>
+            <app-server></app-server>
+            <app-server></app-server>
+        </div>
+    </div>
+</div>

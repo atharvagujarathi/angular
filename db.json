@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Atharva Gujarathi",
+      "email": "akgujarathi92@gmail.com",
+      "company": "JPL"
+    },
+    {
+      "id": 2,
+      "name": "Mohit Kumar",
+      "email": "akgujarathi92@gmail.com",
+      "company": "JPL"
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "dfs",
+      "email": "sdf@gmail.com",
+      "company": "dsf",
+      "id": 4
+    }
+  ]
+}

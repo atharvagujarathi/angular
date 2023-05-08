@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsersdataService } from "./services/usersdata.service"
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-app';
+  // name = 'Atharva!';
+  users: any;
+  constructor(private usersdata: UsersdataService) {
+    this.usersdata.users().subscribe((data) => {
+      console.log(data)
+      this.users = data;
+    })
+    console.warn(this.users)
+  }
+
+  getUserFormData(data: any) {
+    console.log(data)
+    this.usersdata.saveUser(data).subscribe((result) => {
+      console.log(result)
+    })
+  }
 }
+
