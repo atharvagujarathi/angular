@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppFirstCompoComponent {
   name = 'Atharva';
-  id = 2;
+  id = 7;
 }
